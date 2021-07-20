@@ -9,12 +9,10 @@
 <body>
     <h1>Imagem Flexível</h1>
     <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua  janela para aproveitar a melhor experiência &#x1F92F;</p>
-    <p><img src="foto-p/paisagem-p.png" alt="foto pequena"></p>
-    <h2>Imagem Flexível</h2>
-    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua  janela para aproveitar a melhor experiência &#x1F92F;</p>
-    <p><img src="foto-m/paisagem-m.png" alt="foto media"></p>
-    <h3>Imagem Flexível</h3>
-    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua  janela para aproveitar a melhor experiência &#x1F92F;</p>
-    <p><img src="foto-g/paisagem-g.png" alt="foto grande"></p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagem/paisagem-m.png" type="image/png">
+        <img src="imagem/paisagem-g.png" alt="Imagem flexível">
+    </picture>
 </body>
 </html>
